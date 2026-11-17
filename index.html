@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TypeTasks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <div class="addrow">
+    <input id="title" placeholder="Add a task…" />
+    <button id="add">Add</button>
+  </div>
+  <div id="chips">
+    <button class="chip" data-filter="all">All</button>
+    <button class="chip" data-filter="todo">Todo</button>
+    <button class="chip" data-filter="in-progress">In progress</button>
+    <button class="chip" data-filter="done">Done</button>
+  </div>
+  <ul id="list"></ul>
+</div>
+
+<!-- load the COMPILED js, as a module so it can import model.js -->
+<script type="module" src="app.js"></script>
+</body>
+</html>
